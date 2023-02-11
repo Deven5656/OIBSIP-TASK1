@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mango Landing Page</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <img src="logo.jfif" class="logo" alt="">
+        </nav>
+
+        <div class="main-content">
+
+            <div class="image-mango">
+                <div class="swiper"><img src="" id="image"></div>
+            </div>
+            <div class="main-text">
+                <h1>The Mango</h1>
+                <p>India is the land of Mangoes. This juicy fruit, rightly called the 'king' has some 1500 varieties growing in India. Each variety has a distinct taste, shape and colour.</p>
+                <a href="https://en.wikipedia.org/wiki/Mango"><button>Know More</button></a>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="box">
+                <div class="image">
+                    <img src="img4.png" alt="">
+                </div>
+                <div class="inner-box">
+                    <h3>100% Organic</h3>
+                    <p>Famous Mango varieties in India .</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="img5.png" alt="">
+                </div>
+                <div class="inner-box">
+                    <h3>Not Expensive</h3>
+                    <p>Royal Mango and sells at 1,500/-. </p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="img6.png" alt="">
+                </div>
+                <div class="inner-box">
+                    <h3>Super Healthy</h3>
+                    <p>Fresh and Healthy(best for patients also).</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-links">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="far fa-envelope"></i>
+        </div>
+    </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+       let image = document.getElementById('image');
+       let images =['img.jfif','img1.jfif','img2.jfif','img3.jfif']
+       setInterval(function(){
+       let random = Math.floor(Math.random() *4);
+       image.src =images[random];
+       },1000);
+      </script>
+</body>
+</html>
